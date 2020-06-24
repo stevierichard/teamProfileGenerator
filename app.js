@@ -48,11 +48,11 @@ inquirer
   .then((res) => {
     console.log(res);
     console.log(res.username);
-    if (res.role == "engineer") {
+    if (res.role === "engineer") {
       inquirer.prompt([{ type: "input" }]).then(function (response) {
         new Engineer(response);
       });
-    } else if (res.role == "manager") {
+    } else if (res.role === "manager") {
     }
 
     //render(res)
